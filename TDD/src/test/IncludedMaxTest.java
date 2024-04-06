@@ -11,17 +11,17 @@ public class IncludedMaxTest {
 
     @Test
     public void givenMaxClosedWhenGreaterWithLessValueThenTrue(){
-        assertTrue(new IncludedMax(4).isOnLeft(0.0));
+        assertTrue(new IncludedMax(4).isIncluded(0.0));
     }
 
     @Test
     public void givenMaxClosedWhenGreaterWithGreaterValueThenFalse(){
-        assertFalse(new IncludedMax(4).isOnLeft(5.0));
+        assertFalse(new IncludedMax(4).isIncluded(5.0));
     }
 
     @Test
     public void givenMaxCloseWhenGreaterWithEqualValueThenFalse(){
-        assertTrue(new IncludedMax(4).isOnLeft(4));
+        assertTrue(new IncludedMax(4).isIncluded(4));
     }
 
 }

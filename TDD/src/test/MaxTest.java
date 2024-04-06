@@ -10,17 +10,17 @@ public class MaxTest {
 
     @Test
     public void givenMaxOpenedWhenGreaterWithLessValueThenTrue(){
-        assertTrue(new Max(4).isOnLeft(0.0));
+        assertTrue(new Max(4).isIncluded(0.0));
     }
 
     @Test
     public void givenMaxOpenedWhenGreaterWithGreaterValueThenFalse(){
-        assertFalse(new Max(4).isOnLeft(5.0));
+        assertFalse(new Max(4).isIncluded(5.0));
     }
 
     @Test
     public void givenMaxOpenedWhenGreaterWithEqualValueThenFalse(){
-        assertFalse(new Max(4).isOnLeft(4));
+        assertFalse(new Max(4).isIncluded(4));
     }
 
 }

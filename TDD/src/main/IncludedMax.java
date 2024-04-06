@@ -6,7 +6,7 @@ public class IncludedMax extends Max {
         super(value);
     }
 
-    public boolean isOnLeft(double value) {
+    public boolean isIncluded(double value) {
         return this.value >= value;
     }
 
