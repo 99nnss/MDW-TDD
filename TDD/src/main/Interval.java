@@ -4,13 +4,14 @@ public class Interval {
 
     private double min,max;
 
-    public Interval(double d, double e) {
-        this.max = e;
-        this.min = d;
+    public Interval(double min, double max) {
+        assert min <= max;
+        this.max = max;
+        this.min = min;
     }
 
-    public boolean include(double d) {
-        return this.min <= d && d <= this.max;
+    public boolean include(double value) {
+        return this.min <= value && value <= this.max;
     }
 
 }
