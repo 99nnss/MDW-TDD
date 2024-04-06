@@ -9,13 +9,13 @@ import org.junit.jupiter.api.Test;
 public class MaxTest {
 
     @Test
-    public void givenMaxWhenGreaterWithLessValueThenTrue(){
-        assertTrue(new Max(true, 4).greater(0.0));
+    public void givenMaxOpenedWhenGreaterWithLessValueThenTrue(){
+        assertTrue(new Max(4, true).greaterOrEquals(0.0));
     }
 
     @Test
-    public void givenMaxwhenGreaterWithLessValueThenFalse(){
-        assertFalse(new Max(true, 4).greater(5.0));
+    public void givenMaxOpenedWhenGreaterWithGreaterValueThenFalse(){
+        assertFalse(new Max(4, true).greaterOrEquals(5.0));
     }
 
 }
