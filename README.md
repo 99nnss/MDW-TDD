@@ -1,4 +1,3 @@
  Proyecto con Metodologías Ligeras
 
- Alumnos：Le Liu
-          Yifan Jin
+ Alumnos：Le Liu & Yifan Jin
