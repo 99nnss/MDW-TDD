@@ -9,7 +9,7 @@ public class IncludedMaxTest {
 
     @Test
     public void givenMaxClosedWhenGreaterWithLessValueThenTrue(){
-        assertTrue(new IncludedMax(4, false).greaterOrEquals(0.0));
+        assertTrue(new IncludedMax(4).isOnLeft(0.0));
     }
 
 }
