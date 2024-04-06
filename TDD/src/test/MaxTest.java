@@ -18,4 +18,24 @@ public class MaxTest {
         assertFalse(new Max(4, true).greaterOrEquals(5.0));
     }
 
+    @Test
+    public void givenMaxOpenedWhenGreaterWithEqualValueThenFalse(){
+        assertFalse(new Max(4, true).greaterOrEquals(4));
+    }
+
+    @Test
+    public void givenMaxClosedWhenGreaterWithLessValueThenTrue(){
+        assertTrue(new Max(4, false).greaterOrEquals(0.0));
+    }
+
+    @Test
+    public void givenMaxClosedWhenGreaterWithGreaterValueThenFalse(){
+        assertFalse(new Max(4, false).greaterOrEquals(5.0));
+    }
+
+    @Test
+    public void givenMaxClosedWhenGreaterWithEqualValueThenFalse(){
+        assertTrue(new Max(4, false).greaterOrEquals(4));
+    }
+
 }
