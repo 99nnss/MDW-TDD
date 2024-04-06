@@ -4,7 +4,7 @@ public class Interval {
 
     private double min,max;
 
-    public Interval(double min, double max) {
+    public Interval(boolean minOpen, double min, boolean maxOpen, double max) {
         assert min <= max;
         this.max = max;
         this.min = min;
